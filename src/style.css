@@ -19,6 +19,11 @@ li {
   line-height: 18px;
 }
 
+li.description {
+  font-weight: bold;
+  font-size: 15px;
+}
+
 li:first-letter {
   text-transform: capitalize;
 }
