@@ -47,12 +47,6 @@ li:first-letter {
   margin-bottom: 20px;
 }
 
-.btn-primary .btn-success {
-  font-size: 12px;
-  border-width: 5px;
-  text-align: center;
-}
-
 .weather-temperature img {
   margin-right: 10px;
   height: 64px;
