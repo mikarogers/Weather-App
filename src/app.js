@@ -70,10 +70,10 @@ function displayForecast(response) {
                 <div class="weather-forecast-temperature">
                   <span class="weather-forecast-temperature-max">${Math.round(
                     forecastDay.temp.max
-                  )}</span>
+                  )}°</span>
                   <span class="weather-forecast-temperature-min">${Math.round(
                     forecastDay.temp.min
-                  )}</span>
+                  )}°</span>
                 </div>
               </div>`;
     }
@@ -139,6 +139,19 @@ function currentLocation(event) {
   }
   navigator.geolocation.getCurrentPosition(showPosition);
 }
+
+let d = new Date();
+let currHour = d.getHours();
+if (currHour > 6 && currHour <= 17) {
+  let dayElement = document.querySelector("#weather-app");
+  dayElement.style.background =
+    "radial-gradient(circle at 10% 20%, rgb(254, 255, 165) 0%, rgb(255, 232, 182) 90%)";
+} else {
+  let nightElement = document.querySelector("#weather-app");
+  nightElement.style.background =
+    "linear-gradient(to top, #6a85b6 0%, #bac8e0 100%)";
+}
+
 let button = document.querySelector("button#current-location");
 button.addEventListener("click", currentLocation);
 

@@ -102,3 +102,10 @@ li:first-letter {
 .weather-forecast-temperature-min {
   opacity: 0.7;
 }
+
+.github-link {
+  text-decoration: none;
+}
+.github-link:hover {
+  text-decoration: underline;
+}
