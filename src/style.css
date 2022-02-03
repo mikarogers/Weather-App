@@ -20,8 +20,9 @@ li {
 }
 
 li.description {
-  font-weight: bold;
+  font-weight: 600;
   font-size: 15px;
+  color: #333438;
 }
 
 li:first-letter {
@@ -95,5 +96,5 @@ li:first-letter {
   color: #333438;
 }
 .weather-forecast-temperature-min {
-  opacity: 0.5;
+  opacity: 0.7;
 }
