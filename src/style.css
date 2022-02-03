@@ -47,6 +47,11 @@ li:first-letter {
   margin-bottom: 20px;
 }
 
+.btn-success .btn-primary {
+  margin-left: 50%;
+  margin-right: 50%;
+}
+
 .weather-temperature img {
   margin-right: 10px;
   height: 64px;
